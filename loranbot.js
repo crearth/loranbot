@@ -53,6 +53,7 @@ function onMessageHandler (target, context, msg, self) {
 
   // !mars
   if (commandName === '!mars') {
+    getWeather ()
     client.say(target, `Gemiddelde temperatuur vandaag op Mars: ${vandaagTempCelcius}°C.`)
     console.log(`* Executed ${commandName} with a temperature of ${vandaagTempCelcius}°C.`);
   }
